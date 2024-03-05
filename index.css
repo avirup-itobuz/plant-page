@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --green: #3E8847;
+  --dark-green: #09270D;
+  --text-light: #B0BAA3;
+  --bg-grey: #FCFBF8;
+  --white: white;
+  --textareaHeight: 110px;
+  --placeholderFontSize: 14px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea::-moz-placeholder {
+  text-align: left;
+  line-height: calc(var(--textareaHeight) * 2 - var(--placeholderFontSize));
+}
+
+textarea::placeholder {
+  text-align: left;
+  line-height: calc(var(--textareaHeight) * 2 - var(--placeholderFontSize));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+.green {
+  color: green;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+nav a {
+  font-family: "Playfair Display", serif;
+  font-size: 23px !important;
+}
+nav li > a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px !important;
+}
+nav form > div {
+  margin: 5px 10px;
+}
+nav .search-icon {
+  top: 10%;
+  right: 5%;
+}
+
+.plant-collection .plants-collection-scroll::-webkit-scrollbar {
+  display: none !important;
+}
+.plant-collection .plants {
+  width: 300px;
+}
+.plant-collection .plants .image {
+  width: 240px;
+}
+.plant-collection .plants .image img {
+  width: 100%;
+}
+.plant-collection .buttons div {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .plant-collection .plants-collection-scroll::-webkit-scrollbar {
+    display: none !important;
+  }
+  .plant-collection .plants {
+    width: 450px;
+  }
+  .plant-collection .plants .image {
+    width: 400px;
+  }
+  .plant-collection .plants .image img {
+    width: 100%;
+  }
+}
+.journey .floating-tree {
+  height: 400px;
+  display: none;
+}
+.journey .floating-tree img {
+  height: 100%;
+}
+.journey .floating-leaf {
+  display: none;
+  height: 100px;
+}
+.journey .floating-leaf img {
+  height: 100%;
+}
+.journey .plant {
+  width: 100%;
+  max-height: 700px;
+}
+.journey .plant img {
+  width: 80%;
+}
+.journey .text {
+  width: 100%;
+  text-wrap: wrap;
+}
+.journey button {
+  width: 200px;
+  background-color: var(--dark-green);
+}
+
+@media screen and (min-width: 768px) {
+  .journey .floating-tree {
+    display: block;
+  }
+  .journey .floating-leaf {
+    display: block;
+  }
+  .journey .plant {
+    width: 50%;
+  }
+  .journey .text {
+    width: 50%;
+    margin: 0;
+    max-width: 600px;
+  }
+}
+.advantages div > div {
+  background-color: var(--bg-grey);
+  max-width: 400px;
+}
+.advantages .floatLeafUp {
+  top: 20%;
+  right: 10%;
+  height: 100px;
+}
+.advantages .floatLeafUp img {
+  height: 100%;
+}
+.advantages .floatLeaf {
+  top: 20%;
+  right: -10px;
+  z-index: 1;
+  height: 100px;
+}
+.advantages .floatLeaf img {
+  height: 100%;
+}
+.advantages .icon {
+  height: 70px;
+  width: 70px;
+  background-color: var(--green);
+  top: 25%;
+  left: -8%;
+}
+
+.ask .background {
+  height: 600px;
+  width: 100% !important;
+}
+.ask .background img {
+  height: 100%;
+  width: 100%;
+}
+.ask .form {
+  width: 80%;
+  background-color: var(--bg-grey);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  top: 5%;
+  right: 10%;
+}
+.ask .form input,
+.ask .form textarea {
+  background-color: transparent;
+}
+.ask .form button {
+  width: 150px;
+  background-color: var(--dark-green);
+}
+
+@media screen and (min-width: 768px) {
+  .ask .background {
+    height: 600px;
+    width: 60% !important;
+  }
+  .ask .form {
+    width: 50% !important;
+    top: 5%;
+    right: 0 !important;
+  }
+}
+.choose .leaf {
+  width: 250px;
+}
+.choose .leaf img {
+  width: 100%;
+}
+.choose .card {
+  width: 300px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.choose .image {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+.choose .card:hover {
+  background-color: var(--green) !important;
+  color: var(--white) !important;
+}
+.choose .card:hover div,
+.choose .card:hover p {
+  color: var(--white) !important;
+}
+.choose .card:hover .image {
+  background-color: var(--white);
+}
+.choose .card:hover .image img {
+  filter: invert(46%) sepia(23%) saturate(969%) hue-rotate(76deg) brightness(93%) contrast(91%);
+}
+
+.plant-care button {
+  background-color: var(--dark-green);
+  width: 200px;
+}
+.plant-care .text {
+  width: 100%;
+}
+.plant-care .video {
+  width: 100%;
+}
+.plant-care .video img {
+  width: 100%;
+}
+.plant-care .leaf {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .plant-care .text {
+    width: 50%;
+  }
+  .plant-care .video {
+    width: 50%;
+  }
+  .plant-care .video img {
+    width: 100%;
+  }
+  .plant-care .leaf {
+    display: block;
+    bottom: 0;
+    left: 30%;
+  }
+}
+.what-client .carousel {
+  overflow: scroll;
+  height: 200px;
+}
+.what-client .carousel .wrapper {
+  transform: translateX(20%);
+  transition: 0.3s ease;
+}
+.what-client .carousel .wrapper::-webkit-scrollbar {
+  display: none !important;
+}
+.what-client .carousel .carousel-card {
+  background-color: var(--bg-grey);
+  flex-shrink: 0;
+  width: 55%;
+  height: 100%;
+}
+.what-client .carousel .carousel-card .text {
+  width: 100%;
+}
+.what-client .carousel .next {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.what-client .carousel .next img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer {
+  background-color: var(--dark-green);
+}
+.footer p {
+  color: var(--text-light);
+}
+.footer .footer-content .footer-title,
+.footer .footer-content .footer-options {
+  width: 100%;
+}
+.footer .footer-content .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--green);
+}
+.footer .footer-content .icon img {
+  width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer-content .footer-title {
+    width: 50%;
+  }
+  .footer .footer-content .footer-options {
+    width: 50%;
+  }
+  .footer .footer-content .icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--green);
+  }
+  .footer .footer-content .icon img {
+    width: 75%;
+  }
+}/*# sourceMappingURL=index.css.map */

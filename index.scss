@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green: #3E8847;
+    --dark-green: #09270D;
+    --text-light: #B0BAA3;
+    --bg-grey: #FCFBF8;
+    --white: white;
+    --textareaHeight: 110px;
+    --placeholderFontSize: 14px;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    text-align: left;
+    line-height: calc((var(--textareaHeight) * 2) - var(--placeholderFontSize));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+.green {
+    color: green;
+}
+
+.playfair {
+    font-family: "Playfair Display",
+        serif;
+}
+
+nav {
+    a {
+        font-family: "Playfair Display",
+            serif;
+        font-size: 23px !important;
+    }
+
+    li>a {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px !important;
+    }
+
+    form>div {
+        margin: 5px 10px;
+    }
+
+    .search-icon {
+        top: 10%;
+        right: 5%;
+    }
+}
+
+.plant-collection {
+    .plants-collection-scroll::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .plants {
+        width: 300px;
+
+
+        .image {
+            width: 240px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .buttons {
+        div {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            border: 0.5px solid black;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .plant-collection {
+        .plants-collection-scroll::-webkit-scrollbar {
+            display: none !important;
+        }
+
+        .plants {
+            width: 450px;
+
+            .image {
+                width: 400px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.journey {
+    .floating-tree {
+        height: 400px;
+        display: none;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .floating-leaf {
+        display: none;
+        height: 100px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .plant {
+        width: 100%;
+        max-height: 700px;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .text {
+        width: 100%;
+        text-wrap: wrap;
+    }
+
+    button {
+        width: 200px;
+        background-color: var(--dark-green);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .journey {
+        .floating-tree {
+            display: block
+        }
+
+
+        .floating-leaf {
+            display: block
+        }
+
+
+        .plant {
+            width: 50%;
+        }
+
+        .text {
+            width: 50%;
+            margin: 0;
+            max-width: 600px;
+        }
+    }
+}
+
+.advantages {
+    div>div {
+        background-color: var(--bg-grey);
+        max-width: 400px;
+    }
+
+    .floatLeafUp {
+        top: 20%;
+        right: 10%;
+        height: 100px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .floatLeaf {
+        top: 20%;
+        right: -10px;
+        z-index: 1;
+        height: 100px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .icon {
+        height: 70px;
+        width: 70px;
+        background-color: var(--green);
+        top: 25%;
+        left: -8%;
+    }
+}
+
+.ask {
+    .background {
+        height: 600px;
+        width: 100% !important;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .form {
+        width: 80%;
+        background-color: var(--bg-grey);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        top: 5%;
+        right: 10%;
+
+        input,
+        textarea {
+            background-color: transparent;
+        }
+
+        button {
+            width: 150px;
+            background-color: var(--dark-green);
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .ask {
+        .background {
+            height: 600px;
+            width: 60% !important;
+        }
+
+        .form {
+            width: 50% !important;
+            top: 5%;
+            right: 0 !important;
+        }
+    }
+}
+
+.choose {
+    .leaf {
+        width: 250px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .card {
+        width: 300px;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+
+    .image {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: var(--green);
+    }
+
+    .card:hover {
+        background-color: var(--green) !important;
+        color: var(--white) !important;
+
+        div,
+        p {
+            color: var(--white) !important;
+        }
+
+        .image {
+            background-color: var(--white);
+
+            img {
+                filter: invert(46%) sepia(23%) saturate(969%) hue-rotate(76deg) brightness(93%) contrast(91%);
+            }
+        }
+    }
+}
+
+.plant-care {
+    button {
+        background-color: var(--dark-green);
+        width: 200px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .leaf {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .plant-care {
+        .text {
+            width: 50%;
+        }
+
+        .video {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .leaf {
+            display: block;
+            bottom: 0;
+            left: 30%;
+        }
+    }
+}
+
+
+.what-client {
+    .carousel {
+
+        overflow: scroll;
+        height: 200px;
+
+        .wrapper {
+            transform: translateX(20%);
+            transition: 0.3s ease;
+        }
+
+        .wrapper::-webkit-scrollbar {
+            display: none !important;
+        }
+
+        .carousel-card {
+            background-color: var(--bg-grey);
+            flex-shrink: 0;
+            width: 55%;
+            height: 100%;
+
+            .text {
+                width: 100%;
+            }
+        }
+
+
+        .next {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+
+.footer {
+    background-color: var(--dark-green);
+
+    p {
+        color: var(--text-light);
+    }
+
+    .footer-content {
+
+        .footer-title,
+        .footer-options {
+            width: 100%;
+        }
+
+
+
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--green);
+
+            img {
+                width: 75%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .footer {
+
+        .footer-content {
+            .footer-title {
+                width: 50%;
+            }
+
+            .footer-options {
+                width: 50%;
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                background-color: var(--green);
+
+                img {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
