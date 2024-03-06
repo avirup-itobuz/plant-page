@@ -68,12 +68,14 @@ nav .search-icon {
 }
 
 .hero .text {
+  z-index: 4;
   width: 35vw;
   width: 100vw;
 }
 .hero .text .leaf {
   height: 80px;
   width: 100px;
+  margin-bottom: -60px;
 }
 .hero .text .leaf img {
   height: 100%;
@@ -102,9 +104,12 @@ nav .search-icon {
   width: 100vw;
 }
 .hero .carousel-div .carousel-component {
-  overflow: scroll;
+  overflow: hidden;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+.hero .carousel-div .carousel-component ::-webkit-scrollbar {
+  display: none;
 }
 .hero .carousel-div .carousel-component .carousel-wrapper-div {
   width: unset;
@@ -141,12 +146,13 @@ nav .search-icon {
 @media screen and (min-width: 768px) {
   .hero {
     height: 70vh;
+    margin-bottom: 100px;
   }
   .hero .text {
     width: 35vw;
   }
   .hero .carousel-div {
-    width: 70vw;
+    width: 75vw;
     position: absolute;
   }
   .hero .carousel-div .carousel-picture {
