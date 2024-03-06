@@ -10,6 +10,10 @@
   --placeholderFontSize: 14px;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -63,6 +67,92 @@ nav .search-icon {
   right: 5%;
 }
 
+.hero .text {
+  width: 35vw;
+  width: 100vw;
+}
+.hero .text .leaf {
+  height: 80px;
+  width: 100px;
+}
+.hero .text .leaf img {
+  height: 100%;
+  width: 100%;
+}
+.hero .text .love-nature .bar {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: gray;
+}
+.hero .text .hero-text {
+  color: var(--green);
+  font-size: 40px;
+}
+.hero .text .buttons .plant-care {
+  border: 1px solid var(--dark-green);
+  color: var(--dark-green);
+}
+.hero .text .buttons .buy-a-plant {
+  color: white;
+  background-color: var(--dark-green);
+}
+.hero .carousel-div {
+  flex-shrink: 0;
+  width: 100vw;
+}
+.hero .carousel-div .carousel-component {
+  overflow: scroll;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.hero .carousel-div .carousel-component .carousel-wrapper-div {
+  width: unset;
+  transition: 0.5s ease;
+}
+.hero .carousel-div .carousel-component .carousel-wrapper-div .carousel-picture {
+  min-width: 75% !important;
+  transition: 0.5s ease;
+  height: 300px;
+}
+.hero .carousel-div .carousel-component .carousel-wrapper-div > * {
+  flex-shrink: 0;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hero .carousel-div .control-buttons > .left,
+.hero .carousel-div .control-buttons .right {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.hero .carousel-div .control-buttons .progress {
+  width: 120px;
+  height: 8px;
+  color: var(--green) !important;
+}
+
+.hero > *::-webkit-scrollbar {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero .text {
+    width: 35vw;
+  }
+  .hero .carousel-div {
+    width: 70vw;
+    position: absolute;
+  }
+  .hero .carousel-div .carousel-picture {
+    height: unset !important;
+  }
+}
 .plant-collection .plants-collection-scroll::-webkit-scrollbar {
   display: none !important;
 }
@@ -167,8 +257,8 @@ nav .search-icon {
   height: 70px;
   width: 70px;
   background-color: var(--green);
-  top: 25%;
-  left: -8%;
+  top: 32%;
+  left: -3%;
 }
 
 .ask .background {
@@ -272,7 +362,6 @@ nav .search-icon {
 }
 .what-client .carousel {
   overflow: scroll;
-  height: 200px;
 }
 .what-client .carousel .wrapper {
   transform: translateX(20%);
@@ -287,8 +376,25 @@ nav .search-icon {
   width: 55%;
   height: 100%;
 }
-.what-client .carousel .carousel-card .text {
+.what-client .carousel .carousel-card .image {
+  width: 100px;
+  top: 15px;
+  left: -40px;
+}
+.what-client .carousel .carousel-card .image img {
   width: 100%;
+}
+.what-client .carousel .carousel-card .text {
+  padding-left: 20px;
+  font-size: 12px;
+  width: 100%;
+}
+.what-client .carousel .carousel-card:hover {
+  background-color: var(--green);
+  color: white;
+  flex-shrink: 0;
+  width: 55%;
+  height: 100%;
 }
 .what-client .carousel .next {
   width: 50px;

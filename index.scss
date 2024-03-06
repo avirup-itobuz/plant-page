@@ -11,6 +11,10 @@
     --placeholderFontSize: 14px;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
 * {
     scroll-behavior: smooth;
 }
@@ -63,6 +67,123 @@ nav {
     .search-icon {
         top: 10%;
         right: 5%;
+    }
+}
+
+.hero {
+
+    .text {
+        width: 35vw;
+        width: 100vw;
+        // flex-shrink: 0;
+
+        .leaf {
+            height: 80px;
+            width: 100px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .love-nature {
+
+
+            .bar {
+                display: inline-block;
+                width: 50px;
+                height: 2px;
+                background-color: gray;
+            }
+        }
+
+        .hero-text {
+            color: var(--green);
+            font-size: 40px;
+        }
+
+        .buttons {
+            .plant-care {
+                border: 1px solid var(--dark-green);
+                color: var(--dark-green);
+            }
+
+            .buy-a-plant {
+                color: white;
+                background-color: var(--dark-green);
+            }
+        }
+    }
+
+    .carousel-div {
+        flex-shrink: 0;
+        width: 100vw;
+
+        .carousel-component {
+            overflow: scroll;
+            min-width: fit-content;
+
+            .carousel-wrapper-div {
+                width: unset;
+                transition: 0.5s ease;
+
+                .carousel-picture {
+                    min-width: 75% !important;
+                    transition: 0.5s ease;
+                    height: 300px;
+                }
+
+                &>* {
+                    flex-shrink: 0;
+                    height: 500px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .control-buttons {
+
+            &>.left,
+            .right {
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            }
+
+            .progress {
+                width: 120px;
+                height: 8px;
+                color: var(--green) !important;
+            }
+        }
+    }
+
+
+}
+
+.hero>*::-webkit-scrollbar {
+    display: none !important;
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        height: 70vh;
+
+        .text {
+            width: 35vw;
+        }
+
+        .carousel-div {
+            width: 70vw;
+            position: absolute;
+
+            .carousel-picture {
+                height: unset !important;
+            }
+        }
     }
 }
 
@@ -208,8 +329,8 @@ nav {
         height: 70px;
         width: 70px;
         background-color: var(--green);
-        top: 25%;
-        left: -8%;
+        top: 32%;
+        left: -3%;
     }
 }
 
@@ -348,7 +469,7 @@ nav {
     .carousel {
 
         overflow: scroll;
-        height: 200px;
+        // height: 200px;
 
         .wrapper {
             transform: translateX(20%);
@@ -365,9 +486,29 @@ nav {
             width: 55%;
             height: 100%;
 
+            .image {
+                width: 100px;
+                top: 15px;
+                left: -40px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
             .text {
+                padding-left: 20px;
+                font-size: 12px;
                 width: 100%;
             }
+        }
+
+        .carousel-card:hover {
+            background-color: var(--green);
+            color: white;
+            flex-shrink: 0;
+            width: 55%;
+            height: 100%;
         }
 
 

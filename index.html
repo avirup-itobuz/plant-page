@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand mx-3" href="#">My <span class="green">Plants</span></a>
@@ -56,6 +57,62 @@
             </div>
         </div>
     </nav>
+
+    <section class="hero d-flex position-relative flex-column mb-5">
+        <div class="text d-flex flex-column p-4 justify-content-around gap-5">
+            <div class="leaf">
+                <img src="assets/hero/leaf.svg" alt="">
+            </div>
+            <div class="love-nature d-flex align-items-center gap-3">
+                <span class="bar"></span>
+                <h3 class="fw-lighter">Love Nature</h3>
+            </div>
+            <div class="hero-text playfair fw-bold">
+                Take a new friend to your home
+            </div>
+            <div class="d-flex buttons gap-4">
+                <button class="plant-care rounded-pill bg-transparent p-2 px-4">Plant Care</button>
+                <button class="buy-a-plant rounded-pill border-0 p-2 px-4">Buy a plant</button>
+            </div>
+            <div class="icons d-flex gap-5">
+                <img class="" src="assets/hero/facebook.svg" alt="">
+                <img class="" src="assets/hero/instagram.svg" alt="">
+                <img class="" src="assets/hero/pinterest.svg" alt="">
+            </div>
+        </div>
+        <div class="carousel-div  end-0">
+            <div class="carousel-component">
+                <div class="carousel-wrapper-div d-flex" id="carousel-wrapper">
+
+                    <div class="carousel-picture w-75" id="carousel-0">
+                        <img class="w-100 h-100" src="assets/hero/potPlant.png" alt="">
+                    </div>
+                    <div class="carousel-picture w-75" id="carousel-1">
+                        <img class="w-100 h-100" src="assets/hero/leaf.webp" alt="">
+                    </div>
+                    <div class="carousel-picture w-75" id="carousel-2">
+                        <img class="w-100 h-100" src="assets/hero/potPlant.png" alt="">
+                    </div>
+                    <div class="carousel-picture w-75" id="carousel-3">
+                        <img class="w-100 h-100" src="assets/hero/leaf.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="control-buttons d-flex justify-content-center align-items-center gap-3">
+                <div class="left d-flex justify-content-center align-items-center" id="left-carousel"> <img
+                        src="assets/hero/left.svg" alt=""></div>
+                1
+                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 25%"></div>
+                </div>
+                4
+                <div class="right d-flex justify-content-center align-items-center" id="right-carousel"><img
+                        src="assets/hero/right.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
 
     <section class="plant-collection">
         <div class="title text-center fs-3 playfair fw-bolder mb-3">
@@ -227,11 +284,14 @@
         </div>
     </section>
 
-    <section class="what-client">
+    <section class="what-client mb-3">
         <div class="title playfair m-4 fs-1">What clients talk about us</div>
         <div class="carousel">
             <div class="wrapper d-flex gap-5 align-items-center" id="clients-wrapper">
-                <div class="carousel-card p-5 rounded">
+                <div class="carousel-card p-5 rounded position-relative">
+                    <div class="image position-absolute">
+                        <img src="assets/whatClient/girl.png" alt="">
+                    </div>
                     <div class="text">"It is a long established fact that a reader will be distracted by the
                         readable content of a page when It is a long .It
                         is a long .It is a long established fact that a reader will be . It is a long established fact
@@ -241,7 +301,10 @@
                 <div class="next d-flex justify-content-center align-items-center" onclick="nextClient()">
                     <img src="assets/whatClient/arrow.svg" alt="">
                 </div>
-                <div class="carousel-card p-5 rounded">
+                <div class="carousel-card p-5 rounded position-relative">
+                    <div class="image position-absolute">
+                        <img src="assets/whatClient/girl.png" alt="">
+                    </div>
                     <div class="text">"It is a long established fact that a reader will be distracted by the
                         readable content of a page when It is a long .It
                         is a long .It is a long established fact that a reader will be . It is a long established fact
@@ -251,7 +314,10 @@
                 <div class="next d-flex justify-content-center align-items-center" onclick="nextClient()">
                     <img src="assets/whatClient/arrow.svg" alt="">
                 </div>
-                <div class="carousel-card p-5 rounded">
+                <div class="carousel-card p-5 rounded position-relative">
+                    <div class="image position-absolute">
+                        <img src="assets/whatClient/girl.png" alt="">
+                    </div>
                     <div class="text">It is a long established fact that a reader will be distracted by the
                         readable content of a page when It is a long .It
                         is a long .It is a long established fact that a reader will be . It is a long established fact
@@ -267,7 +333,7 @@
 
     <section class="footer">
         <div class="footer-content d-flex flex-column flex-lg-row">
-            <div class="footer-title p-5 m-3 d-flex flex-column justify-content-center">
+            <div class="footer-title p-5 d-flex flex-column justify-content-center">
                 <div class="title fs-1 text-white">nuvosa</div>
                 <p class="mb-5">It is a long established fact that a reader will be distracted by the readable
                     content of a page when It is a long .It
@@ -283,7 +349,7 @@
                             src="assets/footer/twitter.svg" alt=""></div>
                 </div>
             </div>
-            <div class="footer-options d-flex justify-content-center gap-5 p-5">
+            <div class="footer-options d-flex justify-content-center gap-5 p-5 flex-wrap">
                 <div>
                     <div class="title fs-2 fw-lighter text-white my-2">Services</div>
                     <p>Gardening</p>
